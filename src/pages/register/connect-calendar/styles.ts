@@ -1,4 +1,4 @@
-import { Box, styled } from '@drewdev-ui/react'
+import { Box, Text, styled } from '@drewdev-ui/react'
 
 export const ConnectBox = styled(Box, {
   display: 'flex',
@@ -15,5 +15,10 @@ export const ConnectItem = styled('div', {
   borderRadius: '$md',
 
   padding: '$4 $6',
-  marginBottom: '$2',
+  marginBottom: '$4',
+})
+
+export const AuthError = styled(Text, {
+  color: '#f75a68',
+  marginBottom: '$4',
 })
