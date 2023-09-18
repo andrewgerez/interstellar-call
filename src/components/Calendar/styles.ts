@@ -18,6 +18,7 @@ export const CalendarTitle = styled(Text, {
 
   span: {
     color: '$gray200',
+    marginLeft: '$1',
   },
 })
 
