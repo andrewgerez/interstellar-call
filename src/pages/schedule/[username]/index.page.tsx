@@ -2,6 +2,7 @@ import { Avatar, Heading, Text } from '@drewdev-ui/react'
 import { Container, UserHeader } from './styles'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { prisma } from '../../../lib/prisma'
+import { ScheduleForm } from './ScheduleForm'
 
 interface ISchedule {
   user: {
@@ -19,6 +20,8 @@ export default function Schedule({ user }: ISchedule) {
         <Heading>{user.name}</Heading>
         <Text>{user.bio}</Text>
       </UserHeader>
+
+      <ScheduleForm />
     </Container>
   )
 }
