@@ -34,7 +34,7 @@ interface ICalendar {
   onDateSelected: (date: Date) => void
 }
 
-export function Calendar({ selectedDate, onDateSelected }: ICalendar) {
+export function Calendar({ onDateSelected }: ICalendar) {
   const [currentDate, setCurrentDate] = useState(() => {
     return dayjs().set('date', 1)
   })
