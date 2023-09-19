@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { Adapter } from 'next-auth/adapters'
 import { prisma } from '../prisma'
 import { parseCookies, destroyCookie } from 'nookies'
